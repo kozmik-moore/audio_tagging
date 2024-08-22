@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiotagtools"
+version = "0.5.7.dev1"
+authors = [
+    {name="Kozmik Moore", email="koz.moore@gmail.com"},
+]
+description = "Tools for audiotagging and editing files."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+]
+dependencies = [
+    'Click',
+    'Wand',
+    'pyperclip',
+    'pydub',
+    'mutagen',
+]
+
+[project.scripts]
+format-tagstring = 'audiotagtools.scripts.strings:format_tagstring'
+format-artist-tag = 'audiotagtools.scripts.strings:format_artist_tag_cli'
+format-genre-tag = 'audiotagtools.scripts.strings:format_genre_tag_cli'
+format-composer-tag = 'audiotagtools.scripts.strings:format_composer_tag_cli'
+format-multipart-tags = 'audiotagtools.scripts.edit_mp3s:run'
+resize-image = 'audiotagtools.scripts.images:resize_image'
+increase-volume = 'audiotagtools.scripts.sounds:increase_volume'
+decrease-volume = 'audiotagtools.scripts.sounds:decrease_volume'
+flac-to-mp3 = 'audiotagtools.scripts.files:flac_to_mp3_cli'
+find-music-dirs = 'audiotagtools.scripts.files:find_music_dirs_cli'
+find-flac-playlists = 'audiotagtools.scripts.files:find_flac_playlists_cli'
+flac-playlists-to-mp3 = 'audiotagtools.scripts.files:flac_playlist_to_mp3_cli'

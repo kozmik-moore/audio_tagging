@@ -1,0 +1,6 @@
+/audiotagtools/tests/files/
+/dist/
+/audiotagtools.egg-info/
+/audiotag_tools.egg-info/
+/.idea/
+/audiotagtools/scripts/convert_flacs.py
