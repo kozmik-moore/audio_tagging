@@ -318,7 +318,7 @@ def get_album_data(album: str = '',
 
 
 if __name__ == '__main__':
-    # re_id = get_release_id('Steal This Album', artist='System Of A Down', country='US',)
+    # re_id = get_release_id('Steal This Album', artist='System Of A Down', country='US')
     # r_id = get_recording_id('More', release='Boston', artist='Boston', reid=re_id, date='1976', tracks=8, country='US')
     # get_recording(reid=re_id, strict=True)
     get_artist('System of a Down')

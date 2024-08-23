@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audiotagtools"
-version = "0.5.7.dev1"
+version = "0.5.7dev1"
 authors = [
     {name="Kozmik Moore", email="koz.moore@gmail.com"},
 ]
@@ -21,6 +21,7 @@ dependencies = [
     'pyperclip',
     'pydub',
     'mutagen',
+    'musicbrainzngs',
 ]
 
 [project.scripts]
