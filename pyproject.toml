@@ -22,6 +22,7 @@ dependencies = [
     'pydub',
     'mutagen',
     'musicbrainzngs',
+    'eyed3'
 ]
 
 [project.scripts]
